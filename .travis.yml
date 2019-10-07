@@ -1,0 +1,13 @@
+language: node_js
+node_js: 
+  - "10.15.3"
+script:
+  - npm install
+  - CI=false npm run build
+  - cd functions && npm install
+  - cd ..
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token: $FIREBASE_TOKEN
+  project: authentication-64d08
