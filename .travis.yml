@@ -10,4 +10,4 @@ deploy:
   skip_cleanup: true
   provider: firebase
   token: $FIREBASE_TOKEN
-  project: authentication-64d08
+  project: todo-808be
