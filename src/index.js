@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import { SignIn, App, SignUp } from "./App";
+import { SignIn, SignUp } from "./Authentication";
+import { App } from "./App";
 import { BrowserRouter, Route } from "react-router-dom";
 
 ReactDOM.render(
