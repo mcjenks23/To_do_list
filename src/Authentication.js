@@ -61,6 +61,9 @@ export function SignIn(props) {
             placeholder="password"
             type={"password"}
             value={password}
+            onKeyPress={event => {
+              if (event.key === "Enter") handleSignIn();
+            }}
             onChange={e => {
               setPassword(e.target.value);
             }}
@@ -137,6 +140,9 @@ export function SignUp(props) {
             fullWidth={true}
             placeholder="password"
             type={"password"}
+            onKeyPress={event => {
+              if (event.key === "Enter") handleSignUp();
+            }}
             style={{ marginTop: 20 }}
             value={password}
             onChange={e => {

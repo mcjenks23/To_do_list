@@ -49,10 +49,8 @@ export function App(props) {
     db.collection("users")
       .doc(user.uid)
       .collection("tasks")
-      .add({ text: newTask, checked: false })
-      .then(() => {
-        setNewTask("");
-      });
+      .add({ text: newTask, checked: false });
+    setNewTask("");
   };
 
   const deleteTask = task_id => {
